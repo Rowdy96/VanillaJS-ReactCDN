@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Add Multiple React components on a single HTML page</h2>
+    <p>This page demonstrates using React with no build tooling to add multiple components to a single page.</p>
+    <p>React is loaded as a script tag.</p>
+
+    <div class="like-button" data-commentid="1"></div>
+    <div class="like-button" data-commentid="2"></div>
+    <div class="like-button" data-commentid="3"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="index.js"></script>
+</body>
+
+</html>
