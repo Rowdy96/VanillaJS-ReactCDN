@@ -4,14 +4,11 @@ function LikeButton(props) {
   const [liked, setLiked] = React.useState(false);
 
   if (liked) {
-    return "You liked comment number " + props.commentID;
+    return <button onClick={() => setLiked(false)}> Unsubscribe</button>;
   }
 
-  return React.createElement(
-    "button",
-    { onClick: () => setLiked(true) },
-    "Like"
-  );
+  // Using JSX syntax in the Javascript
+  return <button onClick={() => setLiked(true)}> Subscribe</button>;
 }
 
 // Find all DOM containers, and render Like buttons into them.

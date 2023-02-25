@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "babel-preset-react-app": "^10.0.1"
+  }
+}
